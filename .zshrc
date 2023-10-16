@@ -103,4 +103,3 @@ alias zshconfig="micro ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshreload="source ~/.zshrc"
 alias mc="micro"
-export PATH=$PATH:/home/josh/.spicetify

@@ -1,0 +1,60 @@
+/* Removes the nitro button at left-bottom */
+.fixedBottomList-1yrBla {
+        display: none;
+}
+
+/* Removes the Big Nitro Button */
+a[href="/store"] {
+        display: none;
+}
+
+/* Removes the Big Shop Button */
+a[href="/shop"] {
+        display: none;
+}
+
+/* Removes "Support" question mark button */
+a[href="https://support.discord.com"]
+{
+        display: none;
+}
+
+/* Removes "Gift nitro" button from message bar */
+button[aria-label="Send a gift"] {
+        display: none;
+}
+
+/* Rremove public servers button from server list*/
+div[aria-label="Explore Public Servers"] {
+        display: none;
+}
+
+/* Hide "New Emojis" */
+#emoji-picker-tab-panel :is([class^=badgeLabel-], [class^=newlyAddedBadge]) {
+    display: none;
+}
+
+[class^=newlyAddedHighlight], [class^=newlyAddedHighlight]:hover {
+    border: none;
+}
+
+/* Remove "make a thread from a chain of replies" */
+[class*="threadSuggestionBar-"] {
+    display:none;
+}
+
+/* Move gif star back to right */
+.imageAccessory-2yA7Kb {
+    left: initial;
+    right: 6px;
+}
+
+/* Hide Super Reaction Button */
+[aria-label="Add Super Reaction"] {
+    display: none;
+}
+
+/* no discord birthday */
+.channel-1Shao0:has([href="/activities"]) {
+    display: none;
+}

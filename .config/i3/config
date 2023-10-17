@@ -63,10 +63,10 @@ bindsym $mod+d exec "rofi -show combi"
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -195,6 +195,7 @@ exec --no-startup-id feh --bg-scale ~/Pictures/1689327828382530.png
 #keyboard layout
 exec --no-startup-id setxkbmap -layout "gb"
 #run compositor
-exec_always --no-startup-id picom -b
+exec --no-startup-id picom -b
 #custom keybinds
 bindsym $mod+shift+f "exec firefox"
+bindsym $mod+l "exec i3lock -k -B sigma --time-color=FFFFFF --date-color=FFFFFF --verif-color=7E73FF --pass-volume-keys --bar-indicator"

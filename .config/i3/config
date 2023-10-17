@@ -189,13 +189,26 @@ bar {
         status_command  i3status
 }
 
-# my stuff
+
+
+# MY STUFF
 #set wallpaper
 exec --no-startup-id feh --bg-scale ~/Pictures/1689327828382530.png
+
 #keyboard layout
 exec --no-startup-id setxkbmap -layout "gb"
+
 #run compositor
 exec --no-startup-id picom -b
+
+#remove titlebars, set window border pixel size
+default_border pixel 2
+
+#add gaps
+smart_gaps on
+gaps inner 5
+gaps outer 1
+
 #custom keybinds
 bindsym $mod+shift+f "exec firefox"
 bindsym $mod+l "exec i3lock -k -B sigma --time-color=FFFFFF --date-color=FFFFFF --verif-color=7E73FF --pass-volume-keys --bar-indicator"

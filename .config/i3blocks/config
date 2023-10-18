@@ -1,0 +1,81 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=false
+separator_block_width=15
+
+[iface]
+command=~/.config/i3blocks/iface
+ADDRESS_FAMILY=inet
+color=#00FF00
+interval=5
+separator=false
+
+[bandwidth]
+command=~/.config/i3blocks/bandwidth
+interval=2
+INLABEL=IN 
+OUTLABEL=OUT 
+separator=true
+
+[battery]
+command=~/.config/i3blocks/batterybar
+label=bat: 
+interval=8
+markup=pango
+min_width=bat: ■■■■■
+# Discharging colors low to high
+C1=#FF0027
+C2=#FF3B05
+C3=#FFB923
+C4=#FFD000
+C5=#E4FF00
+C6=#ADFF00
+C7=#6DFF00
+C8=#10BA00
+CHARGING_COLOR=#00AFE3
+FULL_COLOR=#FFFFFF
+AC_COLOR=#535353
+separator=true
+
+[disk]
+LABEL=Free: 
+command=~/.config/i3blocks/disk
+DIR=/
+interval=30
+separator=true
+
+[cpu-usage2]
+command=~/.config/i3blocks/cpu_usage2
+markup=pango
+interval=persist
+separator=true
+
+[memory]
+command=~/.config/i3blocks/memory
+label=RAM: 
+interval=15
+separator=true
+
+[time]
+command=date '+%d-%m-%y %H:%M:%S'
+interval=1
+separator=true
+
+[volume]
+command=~/.config/i3blocks/volume
+LABEL=Vol: 
+interval=1
+separator=false
+
+[blank]
+command=echo " "
+LABEL= 
+interval=1
+separator=false

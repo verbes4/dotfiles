@@ -149,3 +149,4 @@ configuration {
       sorting-method:    "name";
   }
 }
+@theme "/home/josh/.local/share/rofi/themes/catppuccin-mocha.rasi"

@@ -58,3 +58,8 @@ div[aria-label="Explore Public Servers"] {
 .channel-1Shao0:has([href="/activities"]) {
     display: none;
 }
+
+/* no profile effects */
+[class*="profileEffects"] {
+2	  display:none;
+3	}

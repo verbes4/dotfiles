@@ -190,7 +190,8 @@
             "missingArt": "lastfmLogo"
         },
         "LoadingQuotes": {
-            "enabled": true
+            "enabled": true,
+            "replaceEvents": true
         },
         "MemberCount": {
             "enabled": true
@@ -574,6 +575,12 @@
             "enabled": true,
             "lockout": true,
             "onboarding": true
+        },
+        "NoMosaic": {
+            "enabled": false
+        },
+        "NoTypingAnimation": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -586,7 +593,7 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1696595537347
+        "settingsSyncVersion": 1698351880319
     },
     "enabledThemes": []
 }

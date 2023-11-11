@@ -1,29 +1,43 @@
 #!/bin/bash
-CONFDIR=~/.config
+#env variable
+CONDIR=~/.config
 
-echo "Elevate priviilges"
+#get sudo privilidges, idk the proper way to do it
+echo "Elevate privilidges"
 sudo sleep 1
 
+#move all the config stuff that isnt in .config
 mv .zshrc ~/.zshrc
 mv .Xresources ~/.Xresources
-cd Pictures
-mkdir ~/Pictures/
-mv 1689327828382530.png ~/Pictures/1689327828382530.png
-cd ..
+mv Pictures ~
 mkdir ~/.local/share/
 mv .local/share/rofi ~/.local/share/rofi
 
+#move all the config stuff that IS in .config
 cd .config
-mv Vencord $CONFDIR/Vencord
-mv btop $CONFDIR/btop
-rm -rf $CONFDIR/i3
-mv i3 $CONFDIR/i3
-mv i3blocks $CONFDIR/i3
-mv micro $CONFDIR/micro
-mv mpv $CONFDIR/mpv
-mv neofetch $CONFDIR/neofetch
-mv picom $CONFDIR/picom
-mv rofi $CONFDIR/rofi
-mv spotify $CONFDIR/spotify
+mv VencordDesktop $CONDIR/VencordDesktop
+mv btop $CONDIR/btop
+rm -rf $CONDIR/i3
+mv i3 $CONDIR/i3
+mv i3blocks $CONDIR/i3
+mv micro $CONDIR/micro
+mv mpv $CONDIR/mpv
+mv neofetch $CONDIR/neofetch
+mv picom $CONDIR/picom
+mv rofi $CONDIR/rofi
+mv spotify $CONDIR/spotify
 
-sudo pacman -S --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh
+#install stuff
+sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
+
+#install yay
+mkdir ~/Documents
+cd ~/Documents
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+#install aur packages
+yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin
+
+#install oh-my-zsh

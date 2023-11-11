@@ -104,4 +104,5 @@ alias zshconfig="micro ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias mc="micro"
 alias i3config="micro ~/.config/i3/config"
-alias keylay='setxkbmap -layout "gb"'
+alias keymap='setxkbmap -layout "gb"'
+alias netstart="sudo virsh net-start default"

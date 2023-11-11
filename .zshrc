@@ -104,3 +104,4 @@ alias zshconfig="micro ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias mc="micro"
 alias i3config="micro ~/.config/i3/config"
+alias keylay='setxkbmap -layout "gb"'

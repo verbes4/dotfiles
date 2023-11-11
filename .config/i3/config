@@ -201,6 +201,9 @@ exec_always --no-startup-id setxkbmap -layout "gb"
 #run compositor
 exec --no-startup-id picom -b
 
+#run arrpc
+exec --no-startup-id arrpc
+
 #remove titlebars, set window border pixel size
 default_border pixel 2
 

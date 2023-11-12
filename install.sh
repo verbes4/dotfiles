@@ -27,15 +27,16 @@ mv picom $CONDIR/picom
 mv rofi $CONDIR/rofi
 mv spotify $CONDIR/spotify
 
-#install stuff
-sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
+#install stuff, commented shit is for testing
+#sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
+sudo pacman -s --needed --noconfirm zsh
 
 #install yay
-mkdir ~/Documents
-cd ~/Documents
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
+#mkdir ~/Documents
+#cd ~/Documents
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si --noconfirm
 
 #install aur packages
 yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin

@@ -31,9 +31,9 @@ mv spotify $CONDIR/spotify
 
 #install stuff, commented shit is for testing
 #sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
-echo "installing stuff"
-sudo pacman -S --needed --noconfirm libnsl #workaround for weird qemu/kvm networking issue
-sudo pacman -S --needed --noconfirm zsh rxvt-unicode rofi feh picom
+#echo "installing stuff"
+#sudo pacman -S --needed --noconfirm libnsl #workaround for weird qemu/kvm networking issue
+#sudo pacman -S --needed --noconfirm zsh rxvt-unicode rofi feh picom
 
 #install yay
 echo "installing yay"
@@ -44,8 +44,10 @@ cd yay
 makepkg -si --noconfirm
 
 #install aur packages
-echo "installing aur packages"
-#yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin
+echo "installing packages"
+#yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
+yay -S --needed --noconfirm libnsl
+yay -S --needed --noconfirm zsh rxvt-unicode rofi feh picom
 
 #install oh-my-zsh
 echo "installing omz"

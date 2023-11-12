@@ -19,7 +19,7 @@ mv VencordDesktop $CONDIR/VencordDesktop
 mv btop $CONDIR/btop
 rm -rf $CONDIR/i3
 mv i3 $CONDIR/i3
-mv i3blocks $CONDIR/i3
+mv i3blocks $CONDIR/i3blocks
 mv micro $CONDIR/micro
 mv mpv $CONDIR/mpv
 mv neofetch $CONDIR/neofetch
@@ -29,14 +29,14 @@ mv spotify $CONDIR/spotify
 
 #install stuff, commented shit is for testing
 #sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
-sudo pacman -S --needed --noconfirm zsh
+sudo pacman -S --needed --noconfirm zsh rxvt-unicode rofi feh picom
 
 #install yay
-#mkdir ~/Documents
-#cd ~/Documents
-#git clone https://aur.archlinux.org/yay.git
-#cd yay
-#makepkg -si --noconfirm
+mkdir ~/Documents
+cd ~/Documents
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
 
 #install aur packages
 #yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin

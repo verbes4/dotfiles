@@ -29,7 +29,7 @@ mv spotify $CONDIR/spotify
 
 #install stuff, commented shit is for testing
 #sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
-sudo pacman -s --needed --noconfirm zsh
+sudo pacman -S --needed --noconfirm zsh
 
 #install yay
 #mkdir ~/Documents
@@ -39,7 +39,7 @@ sudo pacman -s --needed --noconfirm zsh
 #makepkg -si --noconfirm
 
 #install aur packages
-yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin
+#yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin
 
 #install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended

@@ -1,6 +1,6 @@
 #!/bin/bash
 #env variable
-CONDIR=~/.config
+export CONDIR=~/.config
 
 #get sudo privilidges, idk the proper way to do it but this works if u have fast internet
 echo "Elevate privilidges"
@@ -48,5 +48,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-#change shell
+#change shell, this will almost def not work but chsh is being annoying af
+/bin/bash
 chsh /bin/zsh

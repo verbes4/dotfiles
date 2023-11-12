@@ -42,10 +42,10 @@ sudo pacman -S --needed --noconfirm zsh
 #yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin
 
 #install oh-my-zsh
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 #install omz plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/cutom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 #change shell

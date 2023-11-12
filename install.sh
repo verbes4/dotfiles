@@ -1,4 +1,10 @@
 #!/bin/bash
+
+#TO DO: manually install libnsl because for some reason pacman gets a 404 when it tries to install it
+#test around more to see if/why .config/i3/config wont work (i3 asks to generate new one on relog)
+#make chsh work, it doesnt recognise /bin/zsh being there when it is
+#just test everything
+
 #env variable
 export CONDIR=~/.config
 
@@ -28,12 +34,6 @@ mv neofetch $CONDIR/neofetch
 mv picom $CONDIR/picom
 mv rofi $CONDIR/rofi
 mv spotify $CONDIR/spotify
-
-#install stuff, commented shit is for testing
-#sudo pacman -S --needed --noconfirm rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
-#echo "installing stuff"
-#sudo pacman -S --needed --noconfirm libnsl #workaround for weird qemu/kvm networking issue
-#sudo pacman -S --needed --noconfirm zsh rxvt-unicode rofi feh picom
 
 #install yay
 echo "installing yay"

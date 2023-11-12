@@ -215,3 +215,4 @@ gaps outer 1
 #custom keybinds
 bindsym $mod+shift+f "exec firefox"
 bindsym $mod+l "exec i3lock -k -B sigma --time-color=FFFFFF --date-color=FFFFFF --verif-color=7E73FF --pass-volume-keys --bar-indicator"
+bindsym $mod+x "exec xrandr --auto"

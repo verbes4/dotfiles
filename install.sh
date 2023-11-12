@@ -2,7 +2,7 @@
 #env variable
 CONDIR=~/.config
 
-#get sudo privilidges, idk the proper way to do it
+#get sudo privilidges, idk the proper way to do it but this works if u have fast internet
 echo "Elevate privilidges"
 sudo sleep 1
 
@@ -35,9 +35,14 @@ mkdir ~/Documents
 cd ~/Documents
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm
 
 #install aur packages
 yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin
 
 #install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+#install omz plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

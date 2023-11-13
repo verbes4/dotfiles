@@ -47,8 +47,9 @@ makepkg -si --noconfirm
 #install libnsl hopefully?
 echo "installing libnsl"
 cd $DOTFILES
-wget -o libnsl.pkg.tar.zst "https://archlinux.org/packages/core/x86_64/libnsl/download/"
-pacman -u libnsl.pkg.tar.zst
+wget "https://archlinux.org/packages/core/x86_64/libnsl/download/"
+mv index.html libnsl.pkg.tar.zst #weird workaround to make it not corrupted lol
+sudo pacman -U libnsl.pkg.tar.zst
 
 #install aur packages
 echo "installing packages"

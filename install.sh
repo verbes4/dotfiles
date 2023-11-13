@@ -7,6 +7,7 @@
 
 #env variable
 export CONDIR=~/.config
+export DOTFILES="$(pwd)"
 
 #get sudo privilidges, idk the proper way to do it but this works if u have fast internet
 echo "Elevate privilidges"
@@ -25,8 +26,8 @@ cd .config
 echo "moving .config files"
 mv VencordDesktop $CONDIR/VencordDesktop
 mv btop $CONDIR/btop
-rm -rf $CONDIR/i3
-mv i3 $CONDIR/i3
+rm -rf $CONDIR/i3/config
+mv i3/config $CONDIR/i3/config
 mv i3blocks $CONDIR/i3blocks
 mv micro $CONDIR/micro
 mv mpv $CONDIR/mpv
@@ -43,10 +44,15 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
 
+#install libnsl hopefully?
+echo "installing libnsl"
+cd $DOTFILES
+wget -o libnsl.pkg.tar.zst "https://archlinux.org/packages/core/x86_64/libnsl/download/"
+pacman -u libnsl.pkg.tar.zst
+
 #install aur packages
 echo "installing packages"
 #yay -S --noconfirm spotify-adblock arrpc vencord-desktop-bin rxvt-unicode firefox rofi zsh btop micro mpv neofetch picom pacman-contrib feh base-devel
-yay -S --needed --noconfirm libnsl
 yay -S --needed --noconfirm zsh rxvt-unicode rofi feh picom
 
 #install oh-my-zsh

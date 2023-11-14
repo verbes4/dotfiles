@@ -49,7 +49,7 @@ echo "installing libnsl"
 cd $DOTFILES
 wget "https://archlinux.org/packages/core/x86_64/libnsl/download/"
 mv index.html libnsl.pkg.tar.zst #weird workaround to make it not corrupted lol
-sudo pacman -U libnsl.pkg.tar.zst
+sudo pacman -U --noconfirm libnsl.pkg.tar.zst
 
 #install aur packages
 echo "installing packages"

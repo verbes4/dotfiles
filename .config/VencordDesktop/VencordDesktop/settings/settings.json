@@ -182,12 +182,15 @@
             "enabled": false
         },
         "LastFMRichPresence": {
-            "enabled": false,
-            "shareUsername": false,
+            "enabled": true,
+            "shareUsername": true,
             "hideWithSpotify": true,
             "statusName": "some music",
-            "useListeningStatus": false,
-            "missingArt": "lastfmLogo"
+            "useListeningStatus": true,
+            "missingArt": "lastfmLogo",
+            "nameFormat": "song",
+            "username": "verbes444",
+            "apiKey": "7687cdf57853789d4c4163db8df622cd"
         },
         "LoadingQuotes": {
             "enabled": true,
@@ -203,7 +206,9 @@
         },
         "MessageLinkEmbeds": {
             "enabled": true,
-            "automodEmbeds": "never"
+            "automodEmbeds": "never",
+            "listMode": "blacklist",
+            "idList": ""
         },
         "MessageLogger": {
             "enabled": true,
@@ -494,7 +499,9 @@
             "enabled": true
         },
         "PermissionsViewer": {
-            "enabled": true
+            "enabled": true,
+            "permissionsSortOrder": 0,
+            "defaultPermissionsDropdownState": false
         },
         "FavoriteEmojiFirst": {
             "enabled": true
@@ -525,7 +532,7 @@
             "enabled": true,
             "spotify": true,
             "steam": true,
-            "epic": true
+            "epic": false
         },
         "FavoriteGifSearch": {
             "enabled": true,
@@ -537,7 +544,7 @@
             "echoCancellation": true
         },
         "NormalizeMessageLinks": {
-            "enabled": false
+            "enabled": true
         },
         "PreviewMessage": {
             "enabled": true
@@ -590,9 +597,16 @@
         },
         "SuperReactionTweaks": {
             "enabled": true,
-            "superReactByDefault": true,
+            "superReactByDefault": false,
             "unlimitedSuperReactionPlaying": false,
             "superReactionPlayingLimit": 5
+        },
+        "ClientTheme": {
+            "enabled": false,
+            "color": "803b80"
+        },
+        "FixImagesQuality": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -605,7 +619,7 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1699730266656
+        "settingsSyncVersion": 1701023612107
     },
     "enabledThemes": []
 }

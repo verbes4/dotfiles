@@ -1,0 +1,10 @@
+{
+	"window_has_frame": true,
+	"mpv_path": "/usr/bin/mpv",
+	"lyrics": [
+		"lrclib.net",
+		"NetEase",
+		"Genius"
+	],
+	"window_window_bar_style": "linux"
+}

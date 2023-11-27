@@ -193,7 +193,7 @@ bar {
 
 # MY STUFF
 #set wallpaper
-exec --no-startup-id feh --bg-scale ~/Pictures/1689327828382530.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/1689327828382530.png
 
 #keyboard layout
 exec_always --no-startup-id setxkbmap -layout "gb"
@@ -201,7 +201,7 @@ exec_always --no-startup-id setxkbmap -layout "gb"
 #run compositor
 exec --no-startup-id picom -b
 
-#run arrpc
+#run arrpc for vesktop rich presence
 exec --no-startup-id arrpc
 
 #remove titlebars, set window border pixel size
@@ -215,5 +215,4 @@ gaps outer 1
 #custom keybinds
 bindsym $mod+shift+f "exec firefox"
 bindsym $mod+l "exec i3lock -k -B sigma --time-color=FFFFFF --date-color=FFFFFF --verif-color=7E73FF --pass-volume-keys --bar-indicator"
-bindsym $mod+x "exec xrandr --auto"
 bindsym $mod+shift+t "exec i3-nagbar -t warning -m 'Test message to show custom i3 config is here!'"
